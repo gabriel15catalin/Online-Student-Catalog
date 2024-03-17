@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='ro'>
+<head>
+<title>Catalogul clasei</title>
+<meta charset="utf-8">
+<style type='text/css'>
+body {
+	background-image: url("8.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');	
+h1 {
+	font-size: 30px;
+   text-align: center;
+   color: white;
+   font-family: 'Dancing Script', cursive;
+}
+div#unu {
+	position: absolute;
+top: 0%;
+
+left: 80%;
+right: 0%;
+width: 25%;
+height: 40%;
+}
+.button {
+	border-radius: 10px;
+  background-color: #00FFFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+div#doi {
+	position: absolute;
+top: 60%;
+bottom: 70%;
+left: 2%;
+right: 0%;
+width: 40%;
+height: 40%;
+}
+div#trei {
+	position: absolute;
+top: 60%;
+bottom: 70%;
+left: 75%;
+right: 0%;
+width: 40%;
+height: 40%;
+}
+div#patru {
+position: absolute;
+top: 20%;
+bottom: 70%;
+left: 38%;
+right: 0%;
+width: 40%;
+height: 40%;
+}
+div#cinci {
+position: absolute;
+top: 113%;
+bottom: 0%;
+left: 38%;
+right: 0%;
+width: 40%;
+height: 40%;
+}
+div#sase {
+position: absolute;
+top: 40%;
+bottom: 0%;
+left: 33%;
+right: 0%;
+width: 40%;
+height: 40%;
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.container {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  width: 180px;
+  height: 60px;
+  position: absolute;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: #00FFFF;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #4F95DA;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+</style>
+</head>
+<body>
+<h1><u><i>Pagina profesorului</i></u></h1>
+<div id='unu'>
+<form method='get' action='Log_Out.php'>
+<button class="btn">
+        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+        </svg>
+        <span>Ieșiți din cont</span>
+      </button>
+</form>
+</div>
+
+<div id='doi'>
+<form method="get" action="Adaugare_absenta.php">
+<button class="button"><span>Adăugare absență </span></button>
+</form>
+</div>
+
+<div id='trei'>
+<form method="get" action="Adaugare_nota.php">
+<button class="button"><span>Adăugare notă </span></button>
+</form>
+</div>
+
+<div id='patru'>
+<form method="get" action="ELEVI_NOI.php">
+<button class="button"><span>Adăugare elev nou </span></button>
+</form>
+</div>
+
+<div id='cinci'>
+<form method="get" action="Eliminare_elevi_transferati.php">
+<button class="button"><span>Eliminare elevi transferați </span></button>
+</form>
+</div>
+
+<div id='sase'>
+<img src='image.png' width='450' height='400'>
+</div>
+</body>
+</html>

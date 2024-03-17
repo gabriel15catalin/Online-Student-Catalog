@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang='ro'>
+<head>
+<title>Catalogul clasei</title>
+<meta charset="utf-8">
+<style type='text/css'>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+h1 {
+	font-size: 40px;
+	text-align: center;
+	color: cyan;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 2px 2px 5px blue;
+	}
+h5 {
+	text-shadow: 2px 2px 5px cyan;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+a  {
+	font-size:20px;
+	text-align: center;
+	color: #66FF33;
+	font-family: 'Pacifico', cursive;
+	text-shadow: 2px 2px 5px green;
+}
+a:hover {
+color:#FFFF00;
+}
+a:active {
+color: #FF00CC;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+p 	{
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: Calibri Light;
+	}
+h2 {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: Comic Sans MS;
+	text-shadow: 2px 2px 5px silver;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+h3 {
+	font-size: 30px;
+	text-align: center;
+	color: white;
+	font-family: 'Dancing Script', cursive;
+	text-shadow: 2px 2px 5px silver;
+}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+h4 {
+   font-size: 30px;
+   text-align: center;
+   color: white;
+   font-family: 'Shadows Into Light', cursive;
+   text-shadow: 2px 2px 5px silver;
+   }
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+h5 {
+   font-size: 20px;
+   text-align: center;
+   color: white;
+   font-family: 'Shadows Into Light', cursive;
+   
+   border: inset cyan;
+}
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+body {
+	background-image: url("8.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+	}
+div#unu {
+position: absolute;
+top: 220px;
+bottom: 450px;
+left: 35%;
+right: 50%;
+width: 25%;
+height: 40%;
+}
+div#doi {
+position: absolute;
+top: 430px;
+bottom: 0px;
+left: 55%;
+right: 50%;
+width: 25%;
+height: 40%;
+}
+
+div#patru {
+position: absolute;
+top: 50px;
+bottom: 430px;
+left: 20%;
+right: 60%;
+width: 60%;
+height: 20%;
+}
+div#cinci {
+position: absolute;
+top: 150px;
+bottom: 410px;
+left: 36%;
+right: 50%;
+width: 25%;
+height: 40%;
+}
+div#sase {
+position: absolute;
+top: 430px;
+bottom: 0px;
+left: 28%;
+right: 50%;
+width: 25%;
+height: 40%;
+}
+div#sapte {
+position: absolute;
+top: 510px;
+bottom: 0px;
+left: 36%;
+right: 50%;
+width: 25%;
+height: 40%;
+}
+div#opt
+{
+position: absolute;
+top: 200px;
+bottom: 400px;
+left: 5%;
+right: 80%;
+width: 25%;
+height: 40%;
+}
+div#noua
+{
+position: absolute;
+top: 200px;
+bottom: 400px;
+left: 70%;
+right: 100%;
+width: 30%;
+height: 40%;
+}
+div#doisprezece {
+position: absolute;
+top: 75.5%;
+bottom: 0px;
+left: 75%;
+right: 0%;
+width: 15%;
+height: 15%;
+}
+
+div#treisprezece {
+position: absolute;
+top: 77%;
+bottom: 0px;
+left: 5%;
+right: 0%;
+width: 25%;
+height: 40%;
+}
+
+div#cincisprezece {
+position: absolute;
+top: 0%;
+left: 20%;
+right: 0%;
+width: 60%;
+height: 10%;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: #66CCFF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #66FFFF}
+
+.button:active {
+  background-color: #3333FF;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: #00FFFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+	font-size: 19px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00FFFF;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+</head>
+<body>
+
+<div id='patru'>
+<h1>COLEGIUL NAȚIONAL „MIHAI VITEAZUL” SLOBOZIA</h1>
+</div>
+
+<div id='cinci'>
+<h4>Catalog electronic</h4>
+</div>
+
+<div id='unu'>
+<p>CLASA: X E</p>
+<p>PROFESOR DIRIGINTE:<br>
+<h3>Ionescu Bogdan</h3>
+</div>
+
+<div id='doi'>
+<form method='get' action='login.php'>
+<button class="button"><span>Autentificare </span></button>
+ </form>
+ </div>
+
+<div id='sase'>
+<form method='get' action='register.php'>
+<button class="button"><span>Creare cont nou </span></button>
+ </form>
+</div>
+
+<div id='sapte'>
+<a href="https://cnmvslobozia.ro/">Vizitează pagina liceului nostru pentru a afla toate noutățile!</a>
+</div>
+
+<div id='opt'>
+<img src='CNMV.png'>
+</div>
+
+<div id='noua'>
+<img src='cnmihaiviteazulslobozia.jpg'>
+</div>
+
+<div id='doisprezece'>
+<form method='get' action='Situatie_elevi_note.php'>
+<button class="glow-on-hover"><span>Situație note</span></button>
+</form>
+</div>
+
+<div id='treisprezece'>
+<form method='get' action='Situatie_elevi_absente.php'>
+<button class="glow-on-hover"><span>Situație absențe</span></button>
+</form>
+</div>
+</div>
+
+<div id='cincisprezece'>
+<h5>Realizator proiect: Zanfira Gabriel-Cătălin (Clasa a XII-a C)</h5>
+</div>
+</body>
+</html>
+
